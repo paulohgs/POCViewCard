@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/xcode,xcodeinjection,swift,swiftpackagemanager,swiftpm,objective-c,macos,visualstudiocode
-# Edit at https://www.toptal.com/developers/gitignore?templates=xcode,xcodeinjection,swift,swiftpackagemanager,swiftpm,objective-c,macos,visualstudiocode
+# Created by https://www.toptal.com/developers/gitignore/api/xcode,xcodeinjection,macos,swift,objective-c,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=xcode,xcodeinjection,macos,swift,objective-c,visualstudiocode
 
 ### macOS ###
 # General
@@ -154,15 +154,6 @@ Dependencies/
 # https://github.com/johnno1962/injectionforxcode
 
 
-### SwiftPackageManager ###
-Packages
-xcuserdata
-*.xcodeproj
-
-
-### SwiftPM ###
-
-
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
@@ -182,6 +173,12 @@ xcuserdata
 .history
 .ionide
 
+# Support for Project snippet scope
+.vscode/*.code-snippets
+
+# Ignore code-workspaces
+*.code-workspace
+
 ### Xcode ###
 
 ## Xcode 8 and earlier
@@ -190,7 +187,6 @@ xcuserdata
 *.xcodeproj/*
 !*.xcodeproj/project.pbxproj
 !*.xcodeproj/xcshareddata/
-!*.xcodeproj/project.xcworkspace/
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
@@ -201,5 +197,5 @@ xcuserdata
 # https://github.com/johnno1962/injectionforxcode
 
 
-# End of https://www.toptal.com/developers/gitignore/api/xcode,xcodeinjection,swift,swiftpackagemanager,swiftpm,objective-c,macos,visualstudiocode
+# End of https://www.toptal.com/developers/gitignore/api/xcode,xcodeinjection,macos,swift,objective-c,visualstudiocode
 
