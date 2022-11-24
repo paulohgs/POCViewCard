@@ -26,6 +26,7 @@ extension MainCardView: ViewCoding {
     func setupView() {
         viewCard.translatesAutoresizingMaskIntoConstraints = false
         viewCard.layer.cornerRadius = 15
+        viewCard.layer.masksToBounds = true
     }
 
     func setupHierarchy() {
@@ -36,7 +37,7 @@ extension MainCardView: ViewCoding {
         NSLayoutConstraint.activate([
             viewCard.centerYAnchor.constraint(equalTo: self.centerYAnchor),
             viewCard.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            viewCard.heightAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1.5),
+            viewCard.heightAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1.3),
             viewCard.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.8)
         ])
     }

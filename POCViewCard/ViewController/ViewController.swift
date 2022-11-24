@@ -11,7 +11,7 @@ class ViewController: UIViewController {
 
     let mainView = MainCardView()
     let card = Card(name: "Presidente",
-                    description: "Maior cargo e responsável por assinar e executar leis.",
+                    description: "Maior cargo e responsável por assinar e executar lei.",
                     pontuation: 1
     )
 
