@@ -9,7 +9,10 @@ import UIKit
 
 class MainCardView: UIView {
 
-    let viewCard = ViewCard()
+    let viewCard = make(ViewCard()) {
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.layer.cornerRadius = 15
+    }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -24,8 +27,7 @@ class MainCardView: UIView {
 
 extension MainCardView: ViewCoding {
     func setupView() {
-        viewCard.translatesAutoresizingMaskIntoConstraints = false
-        viewCard.layer.cornerRadius = 15
+        backgroundColor = .systemBackground
     }
 
     func setupHierarchy() {
@@ -36,7 +38,7 @@ extension MainCardView: ViewCoding {
         NSLayoutConstraint.activate([
             viewCard.centerYAnchor.constraint(equalTo: self.centerYAnchor),
             viewCard.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            viewCard.heightAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1.5),
+            viewCard.heightAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1.3),
             viewCard.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.8)
         ])
     }
