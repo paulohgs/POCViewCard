@@ -28,6 +28,7 @@ class MainCardView: UIView {
 extension MainCardView: ViewCoding {
     func setupView() {
         backgroundColor = .systemBackground
+        viewCard.layer.masksToBounds = true
     }
 
     func setupHierarchy() {
